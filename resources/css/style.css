@@ -1635,13 +1635,13 @@ h3.comment-reply-title {
     width: 100%; }
     .site-header nav li {
       width: 16.66666667%; }
-      .site-header nav li.writing-link {
+      .site-header nav li.story-link {
         background: #a283a1; }
-      .site-header nav li.notes-link {
+      .site-header nav li.skill-link {
         background: #b196b0; }
-      .site-header nav li.talks-link {
+      .site-header nav li.project-link {
         background: #ce8284; }
-      .site-header nav li.work-link {
+      .site-header nav li.ilike-link {
         background: #d89a9c; }
       .site-header nav li.about-link {
         background: #5f6669; }
