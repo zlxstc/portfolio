@@ -480,27 +480,27 @@ h1 {
       color: #c86b80; }
 
 .page-footer {
-  background: #4b5052;
+  background: #575d60;
+
   padding: 6.818181818%; }
   .page-footer p {
     -webkit-font-smoothing: antialiased;
     color: #fafae8;
     float: right;
     font-family: "abril-text", georgia;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.7em;
     width: 44.54545455%;
     /* 490/1100 */ }
     .page-footer p a {
-      color: #79c2b2; }
+      color: #f09ea1; }
       .page-footer p a:hover {
-        color: #d690a0; }
+        color: #f5c7b0; }
   .page-footer .footer-nav {
     float: left;
-    width: 44.54545455%;
+    width: 40%;
     /* 490/1100 */ }
-    .page-footer .footer-nav ul {
-      border-top: 1px solid #333637;
+    .page-footer .footer-nav ul {     
       -webkit-column-count: 3;
       /* Chrome, Safari, Opera */
       -moz-column-count: 3;
@@ -511,7 +511,6 @@ h1 {
       column-gap: 0;
       display: block; }
     .page-footer .footer-nav li {
-      border-bottom: 1px solid #333637;
       display: block;
       -webkit-font-smoothing: antialiased;
       font-family: "Source Sans Pro";
@@ -520,31 +519,13 @@ h1 {
       letter-spacing: .08em;
       text-transform: uppercase; }
       .page-footer .footer-nav li.link-style-1 a {
-        color: #ffe59c; }
+        color: #c6bae6; }
         .page-footer .footer-nav li.link-style-1 a:hover {
-          color: #d690a0; }
+          color: #f5c7b0; }
       .page-footer .footer-nav li.link-style-2 a {
-        color: #79c2b2; }
+        color: #f09ea1; }
         .page-footer .footer-nav li.link-style-2 a:hover {
-          color: #d690a0; }
-      .page-footer .footer-nav li.link-style-3 a {
-        color: #79c2b2; }
-        .page-footer .footer-nav li.link-style-3 a:hover {
-          color: #d690a0; }
-      .page-footer .footer-nav li.social-link a {
-        color: #fafae8;
-        padding-left: 30px; }
-        .page-footer .footer-nav li.social-link a:hover {
-          color: #d690a0; }
-      .page-footer .footer-nav li.twitter a {
-        background: url(img/icon-twitter.png) left center no-repeat;
-        background-size: 16px; }
-      .page-footer .footer-nav li.facebook a {
-        background: url(img/icon-facebook.png) 3px center no-repeat;
-        background-size: 16px; }
-      .page-footer .footer-nav li.dribbble a {
-        background: url(img/icon-dribbble.png) left center no-repeat;
-        background-size: 16px; }
+          color: #f5c7b0; }
       .page-footer .footer-nav li a {
         display: block;
         padding: 10px 0; }
