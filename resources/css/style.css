@@ -63,19 +63,9 @@ h1 {
       font-size: 18px;
       letter-spacing: -.005em;
       line-height: 1.6em; }
-    .site-header .tagline .designer-link {
-      color: #79c2b2; }
-      .site-header .tagline .designer-link:hover {
-        color: #bfe2da; }
-    .site-header .tagline .story-link {
-      color: #d690a0; }
-      .site-header .tagline .story-link:hover {
-        color: #ebc8d0; }
-    .site-header .tagline .speaking-link {
-      color: #d8c287; }
   .site-header nav {
-    background: #575d60;
-    width: 50%; }
+      background: linear-gradient(to right, #c4a5c1 0%, #f8a2a7 50%, #f5c7b0 100%);
+      width: 50%; }
     .site-header nav li {
       -webkit-font-smoothing: antialiased;
       font-family: "Source Sans Pro";
@@ -86,7 +76,8 @@ h1 {
       display: table;
       table-layout: fixed;
       float: left;
-      width: 33.33333333%; }
+      width: 33.33333333%;
+      transition: background 0.5s; }
       .site-header nav li a {
         color: #fafae8;
         display: table-cell;
