@@ -39,7 +39,7 @@ var data_url = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/29725/got.json";
                     .range(arrayFromProperty(house_colors, "color"));
 
                 //bars
-                var svg = d3.select("body")
+                var svg = d3.select("#chart")
                     .append("svg")
                     .attr("height", h)
                     .attr("width", w)
