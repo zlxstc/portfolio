@@ -1,0 +1,100 @@
+[
+	{
+		"name":"Tyrion   Lannister",
+		"minutes":166,
+		"seconds":15,
+		"episodes":28,
+		"family":"Lannister",
+		"url":"http://gameofthrones.wikia.com/wiki/Tyrion_Lannister"
+	},
+	{
+		"name":"Daenerys   Targaryen",
+		"minutes":127,
+		"seconds":35,
+		"episodes":25,
+		"family":"Targaryen",
+		"url":"http://gameofthrones.wikia.com/wiki/Daenerys_Targaryen"
+	},
+	{
+		"name":"Jon   Snow",
+		"minutes":126,
+		"seconds":41,
+		"episodes":24,
+		"family":"Night's Watch",
+		"url":"http://gameofthrones.wikia.com/wiki/Jon_Snow"
+	},
+	{
+		"name":"Arya   Stark",
+		"minutes":100,
+		"seconds":11,
+		"episodes":27,
+		"family":"Stark",
+		"url":"http://gameofthrones.wikia.com/wiki/Arya_Stark"
+	},
+	{
+		"name":"Eddard   Stark",
+		"minutes":94,
+		"seconds":35,
+		"episodes":9,
+		"family":"Stark",
+		"url":"http://gameofthrones.wikia.com/wiki/Eddard_Stark"
+	},
+	{
+		"name":"Catelyn   Stark",
+		"minutes":91,
+		"seconds":14,
+		"episodes":25,
+		"family":"Stark",
+		"url":"http://gameofthrones.wikia.com/wiki/Catelyn_Stark"
+	},
+	{
+		"name":"Cersei   Lannister",
+		"minutes":90,
+		"seconds":2,
+		"episodes":27,
+		"family":"Lannister",
+		"url":"http://gameofthrones.wikia.com/wiki/Cersei_Lannister"
+	},
+	{
+		"name":"Robb   Stark",
+		"minutes":89,
+		"seconds":16,
+		"episodes":22,
+		"family":"Stark",
+		"url":"http://gameofthrones.wikia.com/wiki/Robb_Stark"
+	},
+	{
+		"name":"Sansa   Stark",
+		"minutes":85,
+		"seconds":42,
+		"episodes":24,
+		"family":"Stark",
+		"url":"http://gameofthrones.wikia.com/wiki/Sansa_Stark"
+	},
+	{
+		"name":"Theon   Greyjoy",
+		"minutes":84,
+		"seconds":11,
+		"episodes":23,
+		"family":"Greyjoy",
+		"url":"http://gameofthrones.wikia.com/wiki/Theon_Greyjoy"
+	},
+	{
+		"name":"Jorah   Mormont",
+		"minutes":72,
+		"seconds":18,
+		"episodes":24,
+		"family":"Targaryen",
+		"url":"http://gameofthrones.wikia.com/wiki/Jorah_Mormont"
+	},
+	{
+		"name":"Jaime   Lannister",
+		"minutes":71,
+		"seconds":25,
+		"episodes":19,
+		"family":"Lannister",
+		"url":"http://gameofthrones.wikia.com/wiki/Jaime_Lannister"
+	}
+]
+    
+    

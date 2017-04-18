@@ -1,5 +1,5 @@
-var data_url = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/29725/got.json";
-            var colors_url = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/29725/house_colors.json";
+var data_url = "/resources/data/first-lah.json";
+            var colors_url = "/resources/data/second-lah.json";
             var data, house_colors;
             d3.json(data_url, loadData);
 
@@ -23,8 +23,8 @@ var data_url = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/29725/got.json";
                 var pad = 10;
                 var h = window.innerHeight - pad;
                 var w = window.innerWidth - pad;
-                var size = 680;
-                var r = size / 8;
+                var size = 580;
+                var r = size / 4;
                 var barWidth = w / data.length;
                 var animTime = 1500;
 
@@ -32,7 +32,7 @@ var data_url = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/29725/got.json";
                     .domain([0, d3.max(data, function(d) {
                         return d.episodes
                     })])
-                    .range([0, r * 3]);
+                    .range([0, r * 0.8]);
 
                 var colorScale = d3.scale.ordinal()
                     .domain(arrayFromProperty(house_colors, "family"))
@@ -86,10 +86,10 @@ var data_url = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/29725/got.json";
 
                 //text info
                 var circle = g.append("circle")
-                    .attr("fill", "#333")
+                    .attr("fill", "rgb(165, 109, 178)")
                     .attr("r", 1)
                     .transition().duration(animTime)
-                    .attr("r", r - 5);
+                    .attr("r", r - 10);
 
                 var title_default = "Game   of  Thrones";
                 var title = g.append("text")
