@@ -19,10 +19,14 @@
   clear: both;
   visibility: hidden; }
 
-body {
+html,body {
   background: #fafae8;
   color: #4b5052;
-  font-family: "abril-text", georgia; }
+  font-family: "abril-text", georgia; 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;}
 
 a {
   text-decoration: none; }
@@ -1946,3 +1950,15 @@ h3.comment-reply-title {
   height: 1px;
   width: 1px;
   overflow: hidden; }
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@font-face {
+    font-family: GameOfThrones;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/29725/got.ttf);
+}
+.bar {
+  &:hover{
+    opacity:.8;
+    cursor: pointer;
+    cursor: hand;
+  }
