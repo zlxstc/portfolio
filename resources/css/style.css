@@ -19,11 +19,10 @@
   clear: both;
   visibility: hidden; }
 
-body {
+html, body {
   background: #fafae8;
   color: #4b5052;
-  font-family: "abril-text", georgia; 
-  }
+  font-family: "abril-text", georgia; }
 
 a {
   text-decoration: none; }
@@ -451,7 +450,12 @@ h1 {
         color: #4b5052; }
 
 .elsewhere {
-  background: #fafae8;
+  background:  -moz-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(196, 165, 193, 0.8)), color-stop(50%, rgba(248, 162, 167, 0.8)), color-stop(100%, rgba(245, 199, 176, 0.8)));
+  background: -webkit-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
+  background: -o-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
+  background: -ms-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
+  background: linear-gradient(to right, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
   padding: 6.818181818%; }
   .elsewhere h1 {
     color: #79c2b2;
@@ -895,11 +899,11 @@ h1 {
   .case-study .featured-banner,
   .about-content .featured-banner {
     background: -moz-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(196, 165, 193, 0.8)), color-stop(50%, rgba(248, 162, 167, 0.8)), color-stop(100%, rgba(245, 199, 176, 0.8)));
-    background: -webkit-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
-    background: -o-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
-    background: -ms-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
-    background: linear-gradient(to right, rgb(142, 120, 140) 0%, rgb(165, 108, 111) 50%, rgb(124, 77, 52) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(196, 165, 193, 0.8)), color-stop(50%, rgba(248, 162, 167, 0.8)), color-stop(100%, rgba(245, 199, 176, 0.8)));
+  background: -webkit-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
+  background: -o-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
+  background: -ms-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
+  background: linear-gradient(to right, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc79c2b2', endColorstr='#ccf1b0bf',GradientType=1 );
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
     padding: 6.818181818% 0;
@@ -954,7 +958,7 @@ h1 {
     margin-top: 20px; }
 
 .about-content {
-  background: #fafae8; }
+  background:#fafae8; }
   .about-content .featured-banner {
     box-shadow: none; }
   .about-content h2 {
@@ -1940,7 +1944,7 @@ h3.comment-reply-title {
       padding: 30px 0 0 30px; }
 
   .about-content .featured-banner h1 {
-    font-size: 34px; } 
+      font-size: 34px; } }
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -1949,7 +1953,7 @@ h3.comment-reply-title {
   width: 1px;
   overflow: hidden; }
 
-.bar:hover{
+.bar:hover {
     opacity:.8;
     cursor: pointer;
     cursor: hand;
