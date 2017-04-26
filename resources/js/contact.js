@@ -1,4 +1,4 @@
-Contact = function() {
+
     
     var contact = CV.contact;
     
@@ -63,7 +63,7 @@ Contact = function() {
     
     svg.attr({
         'xmlns': 'http://www.w3.org/2000/svg',
-        'xmlns:xmlns:xlink': 'http://www.w3.org/1999/xlink',
+        'xmlns:xlink': 'http://www.w3.org/1999/xlink',
         version: '1.1'
     });
     
@@ -187,4 +187,3 @@ Contact = function() {
         }
     }, 300)
 
-}

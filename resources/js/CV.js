@@ -18,5 +18,40 @@ CV = {
             {name: 'Misunderstood',value: 1,desc: 'To be great is to be misunderstood.',id: 'misunderstood'}
         ]
     },
-    
+    contact: {
+        name: 'Cihad Turhan',
+        cv: 'cv.js',
+        links: [{
+                name: "Mail",
+                icon: "resources/img/social/email.svg",
+                color: "#0C9688",
+                href: 'mailto:contact@cihadturhan.com',
+                size: 56
+            }, {
+                name: "Facebook",
+                icon: "resources/img/social/facebook.svg",
+                size: 28,
+                href: 'https://facebook.com/cihadturhan',
+                color: "#3B5999"
+            }, {
+                name: "Github",
+                icon: "resources/img/social/github.svg",
+                size: 28,
+                href: 'https://github.com/cihadturhan',
+                color: "#0A0F19"
+            }, {
+                name: "Codepen",
+                icon: "resources/img/social/codepen.svg",
+                size: 28,
+                href: 'http://codepen.io/cihadturhan/',
+                color: "#1E8CBE"
+            }, {
+                name: "Dribbble",
+                icon: "resources/img/social/dribbble.svg",
+                href: 'https://dribbble.com/cihadturhan',
+                size: 28,
+                color: "#EA4C89"
+            }],
+        passiveLinks: []
+    }
 };

@@ -1,0 +1,80 @@
+div#contact {
+    text-align: center;
+
+}
+
+#contact p {
+    font-size: 14pt;
+}
+
+#contact h3 {
+    padding-top: 15px;
+}
+
+table#contact-table {
+    font-size: 16pt;
+    margin: 15% auto;
+    /* border-collapse: collapse; */
+    font-weight: 300;
+}
+
+table#contact-table th {
+    font-size: 26pt;
+    font-family: ProximaNova;
+    font-weight: normal;
+    color: hsl(350, 100%, 62%);
+}
+
+#contact a {
+  color: rgb(0, 202, 148);
+  text-decoration: none;
+}
+
+#contact a:hover{
+    text-decoration: underline;
+}
+
+#contact-table td:nth-child(1) {
+    border-right: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+#contact-table td {
+    padding: 5pt 20pt;
+}
+
+#contact-table thead th {
+    padding-bottom: 8pt;
+    background-image: -webkit-radial-gradient(center bottom, ellipse cover, hsl(0, 100%, 100%) 10%, hsla(0, 100%, 100%, 0) 80%);    
+    background-image: -moz-radial-gradient(center bottom, ellipse cover, hsl(0, 100%, 100%) 0%, hsla(0, 100%, 100%, 0) 80%);            
+    background-image: radial-gradient(center bottom, ellipse cover, hsl(0, 100%, 100%) 0%, hsla(0, 100%, 100%, 0) 80%);
+    border-bottom: 1px solid hsl(350, 100%, 62%);
+    background-size: 100% 30pt;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    box-shadow: 0 3px 3px -3px hsla(0, 0%, 0%, 0.49);
+}
+
+
+/* */ 
+
+#contact .node {
+  stroke: #444;
+  stroke-width: 1.5pt;
+}
+
+#contact .parent-link {
+    fill: none;
+    stroke: #9ecae1;
+    stroke-width: 2px;
+}
+#contact .children-link {
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 1.5px;
+}
+
+#contact-svg-container{
+  width: 1200px;
+  height: 500px;
+  margin: 0px auto;
+}

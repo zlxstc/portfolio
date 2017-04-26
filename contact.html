@@ -7,9 +7,29 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/contact.css">
     <link rel="stylesheet" type="text/css" href="resources/css/reet.css">
+    <style>
+        .node {
+            stroke: #444;
+            stroke-width: 1.5pt;
+        }
+        
+        .parent-link {
+            fill: none;
+            stroke: #9ecae1;
+            stroke-width: 2px;
+        }
+        
+        .children-link {
+            fill: none;
+            stroke: #f0f0f0;
+            stroke-width: 1.5px;
+        }
+    </style>
     <script src="/vendors/js/jquery-latest.min.js"></script>
     <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="/resources/js/CV.js"></script>
     <meta name="google-site-verification" content="Ltg0s0QdcEOwLMl9AAaTHNKaUi2nbK8ITg40clzj2hA" />
     <title>Eevee's Playground</title>
     <meta name="description" content="Eevee's Playground is Yiwei Hu's personal webpage to showcase the stories, web designs and images.">
@@ -53,25 +73,10 @@
 
         <div id="content" class="site-content">
 
-            <div id="primary" class="content-area">
-                <main id="main" class="site-main" role="main">
 
-                    <div id="contact">
-                        <div id="contact-svg-container"></div>
-                    </div>
-
-                    
-
-
-
-
-
-                </main>
-                <!-- #main -->
+            <div id="contact">
+                <div id="contact-svg-container"></div>
             </div>
-            <!-- #primary -->
-
-
         </div>
         <!-- #content -->
 
@@ -106,6 +111,8 @@
             </div>
         </footer>
     </div>
+
     <script src="/resources/js/contact.js"></script>
+
 </body>
 </html>
