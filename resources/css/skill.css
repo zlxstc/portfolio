@@ -1,0 +1,57 @@
+svg#skill-icons {
+    margin: 0px auto;
+}
+
+#svg-container {
+    position: absolute;
+    left: 0;    
+    width: 100%;
+}
+
+svg#skill-chart {
+    position: relative;
+    z-index: 1;
+}
+
+#skill-chart text.skill-text.title{
+    font-size: 18pt;    
+    fill: #f09ea8;
+}
+
+
+svg#skill-chart, svg#skill-icons{
+    display: block;
+    border: none;
+    margin: 0px auto;
+}
+
+#svg-skill>g{
+   opacity: 0.1;
+   visibility: hidden;
+}
+
+#skill-chart rect.skill-item {
+    fill: #fd929f;
+}
+
+
+#skill-chart rect.skill-item.skill-parent {
+    fill: transparent;
+    stroke: hsl(353, 73%, 78%);
+    stroke-width: 3;
+}
+
+#skill-chart line.vertical-line {
+    stroke: hsl(20, 78%, 83%);
+}
+
+#skill-chart text {
+    font-family: Calibri,"Myriad Pro", "Open Sans", "Fira Sans", sans-serif;
+    font-size: 12pt;
+    fill: hsl(20, 78%, 83%);
+    font-family: RooneySans;
+}
+
+#skill-chart text.skill-text {
+    fill: #ffa6b1;
+}

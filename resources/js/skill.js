@@ -1,42 +1,34 @@
-	// TO-DO
-	// DON'T FORGET TO ADD COLOR CHANGING FROM RED/GREEN TO BLACK GRADUALLY
-	// AND DRAW SOME F*CKING ICONS
-
-	var vis = d3.select('#love-hate-chart');
+	var vis = d3.select('#skill-chart');
 	var imported;
 	var titles = {
-		love: [{
-			name: 'What I Love',
-			id: 'love'
-        }],
-		hate: [{
-			name: 'What I Hate',
-			id: 'hate'
+		skillsihave: [{
+			name: 'Design and Development Skills',
+			id: 'skillsihave'
         }]
 	};
 
 
-	var data = CV.about;
+	var data = CV2.about.skill;
 	//Import the plane
-	d3.xml("/resources/img/love-hate.svg", "image/svg+xml", function (xml) {
+	d3.xml("/resources/img/skill.svg", "image/svg+xml", function (xml) {
 		var importedNode = document.importNode(xml.documentElement, true);
 		document.getElementById('svg-container').appendChild(importedNode);
-		imported = d3.select('#love-hate-icons');
+		imported = d3.select('#skill-icons');
 		initVis();
 	});
 
 	function initVis() {
 		
-		var loveHate = {};
+		//var loveHate = {};
 
-		var width = window.innerWidth / 2 * 0.99,
-			height = Math.min(window.innerHeight * 0.8, 900);
-		var rectHeight = 10 + parseInt(height / 720 * 30);
-		var offsetY = rectHeight + 15;
+		var width = window.innerWidth * 0.88,
+			height = Math.min(window.innerHeight * 0.8, 800);
+		var rectHeight = 12 + parseInt(height / 720 * 30);
+		var offsetY = rectHeight + 50;
 
-		var barOffset = 120 + parseInt(width / 960 * 400);
-		var textOffset = 53;
-		var iconOffset = 10;
+		var barOffset = 40 + parseInt(width / 960 * 400);
+		var textOffset = 100;
+		var iconOffset = 33;
 
 		var margin = {
 			top: 10,
@@ -80,14 +72,14 @@
 		};
 
 		vis.attr({
-			width: width * 2,
+			width: width,
 			height: height
 		});
 
 		imported.attr({
-			width: width * 2,
+			width: width,
 			height: height,
-			viewBox: '0 0 ' + (width * 2) + ' ' + height
+			viewBox: '0 0 ' + (width ) + ' ' + height
 		});
 
 
@@ -99,42 +91,40 @@
 		var childrenDuration = 1500;
 		var textDuration = 1500;
 
-		var maxElemObj = data.love.length > data.hate.length ? data.love : data.hate;
+		var maxElemObj = data;
 
 		var y = d3.scale.ordinal()
-			.rangeRoundBands([offsetY, height], .5)
+			.rangeRoundBands([offsetY, height], 0.6)
 			.domain(d3.keys(maxElemObj));
 
 
 		//Vertical Line
 		vis.append('line').attr({
 			class: 'vertical-line',
-			x1: width,
+			x1: 0,
 			y1: 0,
-			x2: width,
+			x2: 0,
 			y2: 0
 		}).animate({
 			delay: parentDelay + parentDuration + preChildrenDelay
 		}).attr({
 			y2: height
 		})
-
-
-		for (var key in data) {
+	
 			var offset = width - barOffset;
-			var title = titles[key];
+			var title = titles['skillsihave'];
 
-			data[key].sort(function (a, b) {
+			data.sort(function (a, b) {
 				return b.value - a.value;
 			})
-			var subData = data[key].map(F('value'));
+			var subData = data.map(F('value'));
 			
-			var left = key == 'hate';
+			//var left = key == 'hate';
 
 			var elem = vis.append('g').attr({
-				class: key
+				class: 'skill'
 			});
-			loveHate[key] = elem;
+			//loveHate['skill'] = elem;
 
 			var sum = d3.sum(subData);
 
@@ -145,21 +135,21 @@
 			var w = d3.scale.linear()
 				.domain([0, sum])
 				.rangeRound([0, width - barOffset])
-			//.nice()
+			
 
 			//Titles
 			var titleText = elem.append('g')
-				.selectAll('.' + key + '-text')
+				.selectAll('.' + 'skill' + '-text')
 				.data(title);
 
 			var titleTextEnter = titleText.enter().append('text');
 			titleTextEnter.attr({
-				class: key + '-text title',
+				class: 'skill' + '-text title',
 				dy: function (d, i) {
 					var elem = imported.select('#svg-' + d.id);
 					var w = elem.node().getBoundingClientRect().width,
 						h = elem.node().getBoundingClientRect().height;
-					var x = left ? barOffset - w - iconOffset : 2 * width - barOffset + iconOffset;
+					var x = width - barOffset + iconOffset;
 					elem.attr('transform', 'translate(' + x + ',' + (y.range()[0] - offsetY + rectHeight / 2 - h / 2) + ')')
 						.style({
 							visibility: 'visible',
@@ -178,10 +168,10 @@
 					return (y.range()[0] - offsetY + rectHeight / 2 - h / 2);
 				},
 				'dominant-baseline': 'hanging ',
-				dx: width,
+				dx: 500,
 				opacity: 0,
 				'text-anchor': function (d) {
-					return left ? 'end' : 'begin';
+					return 'begin';
 				}
 			}).text(function (d) {
 				return d.name
@@ -196,7 +186,7 @@
 				})
 				.attr({
 					dx: function (d) {
-						return left ? barOffset - textOffset : 2 * width - barOffset + textOffset;
+						return textOffset+w(sum);//title result x
 					},
 					opacity: 1
 				});
@@ -209,11 +199,11 @@
 				.append('g')
 				.append('rect')
 				.attr({
-					class: key + '-item ' + key + '-parent',
+					class: 'skill' + '-item ' + 'skill' + '-parent',
 					width: 0,
 					y: y.range()[0] - offsetY,
 					height: rectHeight,
-					x: width,
+					x: 0,
 					fill: 'none'
 				}).animate({
 					ease: strongInOut,
@@ -221,7 +211,7 @@
 					delay: parentDelay
 				})
 				.attr({
-					x: left ? barOffset : width,
+					x: 0,
 					width: w(sum)
 				});
 			
@@ -230,16 +220,16 @@
 
 			//Rectangles
 			var rects = elem.append('g')
-				.selectAll('.' + key + '-item')
+				.selectAll('.' + 'skill' + '-item')
 				.data(subData);
 
 			var enter = rects.enter().append('rect');
 			enter.attr({
-				class: key + '-item',
+				class: 'skill' + '-item',
 				width: 0,
 				y: y.range()[0] - offsetY,
 				height: rectHeight,
-				x: width
+				x: 0
 			})
 			
 			//Rectangles first animation
@@ -252,13 +242,10 @@
 					x: function (d) {
 						var val;
 
-						if (left) {
-							val = width - offset;
-							offset -= w(d);
-						} else {
-							offset -= w(d);
-							val = width + offset
-						}
+						
+						offset -= w(d);
+						val = 0 + offset
+						
 
 						return val;
 					},
@@ -279,17 +266,17 @@
 
 			//Names
 			var texts = elem.append('g')
-				.selectAll('.' + key + '-text')
-				.data(data[key]);
+				.selectAll('.' + 'skill' + '-text')
+				.data(data);
 
 			var textEnter = texts.enter().append('text');
 			textEnter.attr({
-				class: key + '-text',
+				class: 'skill' + '-text',
 				dy: function (d, i) {
 					var elem = imported.select('#svg-' + d.id);
 					var w = elem.node().getBoundingClientRect().width,
 						h = elem.node().getBoundingClientRect().height;
-					var x = left ? barOffset - w - iconOffset : 2 * width - barOffset + iconOffset;
+					var x = width - barOffset + iconOffset;
 					elem.attr('transform', 'translate(' + x + ',' + (y(i) - h / 2 + rectHeight / 2) + ')')
 						.style({
 							visibility: 'visible',
@@ -308,10 +295,10 @@
 					return y(i);
 				},
 				'dominant-baseline': 'hanging ',
-				dx: width,
+				dx: 0,
 				opacity: 0,
 				'text-anchor': function (d) {
-					return left ? 'end' : 'begin';
+					return 'begin';
 				}
 			}).text(function (d) {
 				return d.name
@@ -326,31 +313,31 @@
 				})
 				.attr({
 					dx: function (d) {
-						return left ? barOffset - textOffset : 2 * width - barOffset + textOffset;
+						return textOffset+w(sum);
 					},
 					opacity: 1
 				});
 
 			//Descriptions
-			var descs = elem.append('g')
-				.selectAll('.' + key + 'desc-text')
-				.data(data[key]);
+			/*var descs = elem.append('g')
+				.selectAll('.' + 'skill' + 'desc-text')
+				.data(data);
 			
 
 			var descEnter = descs.enter().append('text');
 
 			descEnter.attr({
-				class: key + 'desc-text',
+				class: 'skill' + 'desc-text',
 				dy: function (d, i) {
 					return y(i);
 				},
 				'dominant-baseline': 'hanging',
 				dx: function (d) {
-					return left ? barOffset - textOffset : 2 * width - barOffset + textOffset;
+					return textOffset+w(sum);
 				},
 				opacity: 0,
 				'text-anchor': function (d) {
-					return left ? 'end' : 'begin';
+					return 'begin';
 				}
 			}).text(function (d) {
 				return d.desc
@@ -367,7 +354,7 @@
 						return y(i) + rectHeight / 2;
 					},
 					opacity: 1
-				});
+				}); */
 
-		}
+		
 	}
