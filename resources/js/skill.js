@@ -27,7 +27,7 @@
 		var offsetY = rectHeight + 50;
 
 		var barOffset = 40 + parseInt(width / 960 * 400);
-		var textOffset = 100;
+		var textOffset = 90;
 		var iconOffset = 33;
 
 		var margin = {
@@ -294,7 +294,7 @@
 						});
 					return y(i);
 				},
-				'dominant-baseline': 'hanging ',
+				'dominant-baseline': 'text-before-edge',
 				dx: 0,
 				opacity: 0,
 				'text-anchor': function (d) {

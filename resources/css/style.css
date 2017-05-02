@@ -232,11 +232,8 @@ h1 {
       text-transform: uppercase;
       color: #fafae8; }
 
-.notes {
-  background: #4b5052;
-  padding: 6.818181818% 0 30px 6.818181818%; }
-  .notes .notes-header {
-    margin: 0 6.818181818% 50px 0; }
+
+
   .notes h1 {
     display: inline-block;
     line-height: 1.1em;
@@ -360,10 +357,7 @@ h1 {
     .latest-work li:nth-child(3n+3) {
       margin-right: 0; }
 
-.speaking-events {
-  background: #5cb6a1;
-  color: #fafae8;
-  padding: 6.818181818%; }
+
   .speaking-events a {
     color: #ffe59c; }
   .speaking-events h1 {
@@ -439,14 +433,7 @@ h1 {
         background: #ffe59c;
         color: #4b5052; }
 
-.elsewhere {
-  background:  -moz-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(196, 165, 193, 0.8)), color-stop(50%, rgba(248, 162, 167, 0.8)), color-stop(100%, rgba(245, 199, 176, 0.8)));
-  background: -webkit-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
-  background: -o-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
-  background: -ms-linear-gradient(left, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
-  background: linear-gradient(to right, rgba(196, 165, 193, 0.8) 0%, rgba(248, 162, 167, 0.8) 50%, rgba(245, 199, 176, 0.8) 100%);
-  padding: 6.818181818%; }
+
   .elsewhere h1 {
     color: #79c2b2;
     margin-bottom: 20px; }
@@ -1523,8 +1510,7 @@ h3.comment-reply-title {
   .main-banner .story-link {
     width: 100%; }
 
-  .notes {
-    padding-top: 50px; }
+
     .notes li {
       padding-bottom: 50px;
       padding-right: 6.818181818%;
@@ -1532,8 +1518,7 @@ h3.comment-reply-title {
       .notes li:nth-of-type(even) {
         margin-left: 0; }
 
-  .latest-work {
-    padding: 10px 6.818181818% 50px 6.818181818%; }
+ 
     .latest-work li {
       margin: 0 5% 36px 5%;
       width: 90%; }
@@ -1851,8 +1836,7 @@ h3.comment-reply-title {
   .site-header .tagline {
     padding: 20px 40px; }
 
-  .notes {
-    text-align: center; }
+
     .notes li .thumbnail-wrapper {
       display: block; }
     .notes li img {
@@ -1861,8 +1845,7 @@ h3.comment-reply-title {
     .notes li .note-description {
       display: block; }
 
-  .speaking-events {
-    text-align: center; }
+
     .speaking-events li {
       text-align: left; }
 
