@@ -46,7 +46,7 @@
     .gravity(0.1)
     .size([width, height])
     .linkDistance(function(d) {
-        var dist = d.source == 0 ? 300 : 150;
+        var dist = d.source == 0 ? 500 : 250;
         return width < 480 ? dist / 2 : dist;
     })
     .linkStrength(function(d) {

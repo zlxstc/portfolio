@@ -19,37 +19,37 @@ CV = {
         ]
     },
     contact: {
-        name: 'Cihad Turhan',
+        name: 'Yiwei Hu',
         cv: 'cv.js',
         links: [{
                 name: "Mail",
                 icon: "resources/img/social/email.svg",
                 color: "#0C9688",
-                href: 'mailto:contact@cihadturhan.com',
-                size: 56
+                href: 'mailto:yiwei.ux@gmail.com',
+                size: 100
             }, {
                 name: "Facebook",
                 icon: "resources/img/social/facebook.svg",
-                size: 28,
-                href: 'https://facebook.com/cihadturhan',
+                size: 60,
+                href: 'https://www.facebook.com/yiwei.hu2',
                 color: "#3B5999"
             }, {
                 name: "Github",
                 icon: "resources/img/social/github.svg",
-                size: 28,
-                href: 'https://github.com/cihadturhan',
+                size: 60,
+                href: 'https://github.com/yiweih',
                 color: "#0A0F19"
             }, {
                 name: "Codepen",
                 icon: "resources/img/social/codepen.svg",
-                size: 28,
-                href: 'http://codepen.io/cihadturhan/',
+                size: 60,
+                href: 'http://codepen.io/yiweih/',
                 color: "#1E8CBE"
             }, {
                 name: "Dribbble",
                 icon: "resources/img/social/dribbble.svg",
-                href: 'https://dribbble.com/cihadturhan',
-                size: 28,
+                href: 'https://dribbble.com/yiweih',
+                size: 60,
                 color: "#EA4C89"
             }],
         passiveLinks: []

@@ -27,8 +27,8 @@
 		var offsetY = rectHeight + 50;
 
 		var barOffset = 40 + parseInt(width / 960 * 400);
-		var textOffset = 90;
-		var iconOffset = 33;
+		var textOffset = 100;
+		var iconOffset = 50;
 
 		var margin = {
 			top: 10,

@@ -15,7 +15,7 @@ svg#skill-chart {
 
 #skill-chart text.skill-text.title{
     font-size: 18pt;    
-    fill: #f09ea8;
+    fill: #fafae8;
 }
 
 
@@ -31,29 +31,29 @@ svg#skill-chart, svg#skill-icons{
 }
 
 #skill-chart rect.skill-item {
-    fill: #fd929f;
+    fill: #fafae8;
 }
 
 
 #skill-chart rect.skill-item.skill-parent {
     fill: transparent;
-    stroke: hsl(353, 73%, 78%);
+    stroke: #fafae8;
     stroke-width: 3;
 }
 
 #skill-chart line.vertical-line {
-    stroke: hsl(20, 78%, 83%);
+    stroke: #fafae8;
 }
 
 #skill-chart text {
     font-family: "Calibri","Myriad Pro", "Open Sans", "Fira Sans", sans-serif;
     font-size: 16pt;
-    fill: hsl(20, 78%, 83%);
+    fill: #fafae8;
     font-family: RooneySans;
 }
 
 #skill-chart text.skill-text {
 	vertical-align: middle;
 	margin-top: 10px;
-    fill: #ffa6b1;
+    fill: #fafae8;
 }
