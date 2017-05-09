@@ -29,8 +29,8 @@
 		
 		var loveHate = {};
 
-		var width = window.innerWidth / 2 * 0.99,
-			height = Math.min(window.innerHeight * 0.8, 900);
+		var width = window.innerWidth / 2 * 0.95,
+			height = Math.min(window.innerHeight * 0.8, 1000);
 		var rectHeight = 10 + parseInt(height / 720 * 30);
 		var offsetY = rectHeight + 15;
 

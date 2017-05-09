@@ -46,10 +46,9 @@ svg#skill-chart, svg#skill-icons{
 }
 
 #skill-chart text {
-    font-family: "Calibri","Myriad Pro", "Open Sans", "Fira Sans", sans-serif;
     font-size: 16pt;
     fill: #fafae8;
-    font-family: RooneySans;
+    font-family: Play;
 }
 
 #skill-chart text.skill-text {
@@ -57,3 +56,5 @@ svg#skill-chart, svg#skill-icons{
 	margin-top: 10px;
     fill: #fafae8;
 }
+
+

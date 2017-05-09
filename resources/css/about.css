@@ -14,13 +14,13 @@ svg#love-hate-chart {
 }
 
 #love-hate-chart text.love-text.title{
-    font-size: 12pt;    
-    fill: #f09ea8;
+    font-size: 14pt;    
+    fill: #ea8490;
 }
 
 #love-hate-chart text.hate-text.title {
-    font-size: 12pt;    
-    fill: rgb(186, 163, 205);
+    font-size: 14pt;    
+    fill: rgb(161, 118, 196);
 }
 
 svg#love-hate-chart, svg#love-hate-icons{
@@ -59,16 +59,15 @@ svg#love-hate-chart, svg#love-hate-icons{
 }
 
 #love-hate-chart text.hate-text {
-    fill: hsl(273, 30%, 72%);
+    fill: rgb(161, 118, 196);
 }
 
 #love-hate-chart text {
-    font-family: Calibri,"Myriad Pro", "Open Sans", "Fira Sans", sans-serif;
-    font-size: 11pt;
+    font-size: 10pt;
     fill: #7B7B7B;
-    font-family: RooneySans;
+    font-family: Play;
 }
 
 #love-hate-chart text.love-text {
-    fill: #f09ea8;
+    fill: #ea8490;
 }
